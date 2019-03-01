@@ -31,5 +31,3 @@ const org1_depts = [
       children: [{ name: 'investment', children: [] }],
     },
   ]
-//function PrintDepts() {
-    document.innerHtml = output
