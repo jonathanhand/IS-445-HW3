@@ -28,9 +28,9 @@ const org1_depts = [
       children: [{ name: 'investment', children: [] }],
     },
   ]
-function PrintDepts() {
+//function PrintDepts() {
     const pythonElement = document.createElement("li");
     pythonElement.id = "python";          // Define element ID
     pythonElement.textContent = "Python"; // Define its text content
     document.getElementById("languages").appendChild(pythonElement);
-    }
+    //}
