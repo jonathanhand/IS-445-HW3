@@ -1,3 +1,6 @@
+
+document.getElementById("orgData1").innerHTML = "New text!";
+//querySelectorAll() to find all items
 const org1_depts = [
     {
       name: 'accounting',
@@ -29,8 +32,4 @@ const org1_depts = [
     },
   ]
 //function PrintDepts() {
-    const pythonElement = document.createElement("li");
-    pythonElement.id = "python";          // Define element ID
-    pythonElement.textContent = "Python"; // Define its text content
-    document.getElementById("languages").appendChild(pythonElement);
-    //}
+    document.innerHtml = output
