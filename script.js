@@ -1,5 +1,4 @@
 
-
 //querySelectorAll() to find all items
 const org1_depts = [
     {
@@ -33,21 +32,41 @@ const org1_depts = [
   ]
 
 
-  function recurs(depts)
+  function recurs(depts, divName)
   {
-      for (var i in depts)
+   
+      for (var i in depts) //loops through each element in object
     {
-        console.log(depts[i].name);
+
+        var parentDept = depts[i].name;  //name of the property at index i
+        console.log(parentDept);
+
+        /*
+        //adding to html with nodes
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(parentDept);
+        node.appendChild(textnode);
+        document.getElementById("orgData1").appendChild(list);
+        */
+      
+        var test = '<li>' + depts[i].name+ '</li>';
+        document.getElementById(divName).innerHTML += test;
+
         if(depts[i].children.length > 0)
-        {
-            recurs(depts[i].children);
+        {   
+            recurs(depts[i].children, divName); //has to pass divName again so knows location
         }
         
         
      }
   }
-  recurs(org2_depts);
+
+  recurs(org2_depts, "orgData2"); //added another param for the html div location...
+  recurs(org1_depts, "orgData1"); //not sure how else to append the different objects to right spot in html
+  
+  
   /*
+  // with for loops instead of recursion
   function PrintDepts(depts)
     {
         for (var i in depts) 
