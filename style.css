@@ -1,11 +1,15 @@
-.borderGreen{
-    border: 3px solid green;
+.borderGreen {
+  border: 3px solid green;
 }
-.bigTitle{
-    font-size: 1.8em;
-    font-weight: bold;
+.bigTitle {
+  font-size: 1.8em;
+  font-weight: bold;
 }
-.container{
-    display: flex;
-    flex-flow: row-wrap;
+.container {
+  display: flex;
+  flex-flow: row-wrap;
+}
+.paddingCenter {
+  text-align: left;
+  padding: 1px;
 }
