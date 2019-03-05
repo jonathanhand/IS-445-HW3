@@ -5,3 +5,7 @@
     font-size: 1.8em;
     font-weight: bold;
 }
+.container{
+    display: flex;
+    flex-flow: row-wrap;
+}
