@@ -36,10 +36,10 @@ const org1_depts = [
     {
 
         var deptName = depts[i].name;  //name of the property at index i
-        if (depth === 1)
+        if (depth === 1) //if first of nested list
         {
             var ULNode = document.createTextNode(deptName);
-            target.appendChild(ULNode);
+            target.appendChild(ULNode); //append text node without adding bullet
         }
         else
         {
@@ -60,5 +60,5 @@ const org1_depts = [
      }
   }
   var depth = 0;
-  recurs(org1_depts, document.getElementById("orgUL1"), depth); //added another param for the html div location...
+  recurs(org1_depts, document.getElementById("orgUL1"), depth); //param for html target and counter to track depth of nested list
   recurs(org2_depts, document.getElementById("orgUL2"), depth);   
