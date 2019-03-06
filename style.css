@@ -1,13 +1,11 @@
 .borderGreen {
   border: 3px solid green;
+  width: 50%;
+  margin: auto;
 }
 .bigTitle {
   font-size: 1.8em;
   font-weight: bold;
-}
-.container {
-  display: flex;
-  flex-flow: row-wrap;
 }
 .paddingCenter {
   text-align: left;
